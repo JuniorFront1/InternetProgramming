@@ -1,0 +1,157 @@
+#canvas {
+    min-height: 700px;
+}
+
+.canvas__container {
+    padding: 0 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    border: 5px solid black;
+}
+
+.canvas__blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+}
+
+.canvas__blocks-item:first-child {
+    border-right: 5px solid black;
+}
+
+.canvas__kinds {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.canvas__kinds-item img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.canvas__kinds-item {
+    width: 150px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.canvas__kinds-text {
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Стили ввода плотности */
+.canvas__data-item {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.canvas__data {
+    padding: 50px 0 30px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.canvas__data-input {
+    border: 1px solid black;
+    padding: 5px;
+    max-width: 100px;
+}
+
+/* Стили счётчика объёма */
+
+.counter-wrapper {
+    font-family: 'Merriweather', serif;
+    background: #f2ede7;
+    border-radius: 8px;
+    width: 120px;
+    display: flex;
+    font-size: 18px;
+    height: 30px;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.counter-wrapper__control {
+    text-align: center;
+    width: 40px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.counter-wrapper__control:hover {
+    background: #eb5a1e;
+    color: #FFF;
+}
+
+.counter-wrapper__current {
+    width: 40px;
+    text-align: center;
+}
+
+/* Кнопка "Вычисления" */
+
+.btn-result {
+    display: block;
+    margin: 0 auto;
+    color: black;
+    font-size: 20px;
+    background: #dad5d0;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    right: 40px;
+    transition: 0.2s ease-in;
+}
+
+.btn-result:hover {
+    cursor: pointer;
+    background: #eb5a1e;
+    color: #FFF;
+}
+
+/* Стили весов */
+.scales-container {
+    padding: 30px 0;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+}
+
+.scales__item {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    display: block;
+    width: 520px;
+    height: 4px;
+    background-color: black;
+    transition: 0.5s;
+}
+
+/* Стили вариантов выбора */
+.scales__img-first {
+    position: absolute;
+    left: 330px;
+    top: 40px;
+}
+
+.scales__img-second {
+    position: absolute;
+    right: 350px;
+    top: 40px;
+}
+
+.scales__item-img {
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+}

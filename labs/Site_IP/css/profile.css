@@ -1,0 +1,92 @@
+.account {
+    background: linear-gradient(45deg, #2C3911, #A9990A);
+    min-height: 740px;
+}
+
+.account__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.account__blocks {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background: white;
+    box-shadow: 1px 2px 4px rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 30px;
+    max-width: 400px;
+}
+
+.account__blocks-item {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.account__blocks-item:nth-child(2),
+.account__blocks-item:nth-child(3) {
+    border-bottom: 1px solid #000;
+}
+
+.account__blocks-email a {
+    text-decoration: underline;
+}
+
+.account__logout {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    width: 140px;
+    color: #22aae0;
+    border: 2px solid black;
+    border-radius: 2px;
+    padding: 5px 15px;
+}
+
+.account__blocks-item:last-child {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.account__logout:hover {
+    background: black;
+}
+
+.account__blocks-img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.account__blocks-login,
+.account__blocks-email,
+.account__blocks-pass {
+    font-size: 20px;
+}
+
+.account__blocks-input {
+    color: black;
+    padding: 5px;
+}
+
+.account__blocks-btn {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    width: 140px;
+    color: #22aae0;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 2px;
+    padding: 5px 15px;
+}
+
+.account__blocks-btn:hover {
+    background: black;
+}

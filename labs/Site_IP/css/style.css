@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.none {
+    display: none;
+}
+
+input {
+    all: unset;
+}
+
+input:focus {
+    border: none;
+    border-bottom: 1px solid black;
+    background: white;
+}
